@@ -1,47 +1,22 @@
-<script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
-</script>
-
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+    <div class="flex items-center justify-center h-screen bg-gray-200">
+      <div class="text-center p-6 bg-white shadow-lg rounded-lg">
+        <h1 class="text-4xl font-bold text-blue-600">¡Tailwind CSS está funcionando!</h1>
+        <p class="mt-4 text-gray-700">Esto es una prueba para verificar la configuración de Tailwind.</p>
+        <button class="mt-6 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
+          Haz clic aquí
+        </button>
+      </div>
     </div>
-  </header>
-
-  <main>
-    <TheWelcome />
-  </main>
-</template>
-
-<style scoped>
-header {
-  line-height: 1.5;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
+  </template>
+  
+  <script lang="ts">
+  export default {
+    name: 'App'
   }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
-</style>
+  </script>
+  
+  <style scoped>
+  /* Puedes añadir estilos adicionales si lo necesitas */
+  </style>
+  
