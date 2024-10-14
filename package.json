@@ -15,7 +15,9 @@
   },
   "dependencies": {
     "daisyui": "^4.12.13",
-    "vue": "^3.5.11"
+    "firebase": "^10.14.1",
+    "vue": "^3.5.11",
+    "vue-router": "^4.4.5"
   },
   "devDependencies": {
     "@tsconfig/node20": "^20.1.4",

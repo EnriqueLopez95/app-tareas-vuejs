@@ -1,0 +1,27 @@
+/* Estilos para la página de inicio */
+@import 'tailwindcss/tailwind.css'; /* Asegúrate de que esta ruta sea correcta */
+@import 'daisyui/dist/full.css'; /* Importa daisyUI si lo necesitas */
+
+/* Ajustes para hacer el diseño más responsivo */
+@media (max-width: 640px) {
+  .bg-white {
+    width: 90%; /* Ancho del contenedor en pantallas pequeñas */
+    background-color: transparent; /* Asegúrate de que no haya fondo blanco */
+  }
+
+  h1 {
+    font-size: 3rem; /* Tamaño de fuente más pequeño en pantallas pequeñas */
+  }
+
+  h2 {
+    font-size: 2rem; /* Tamaño de fuente más pequeño para el subtítulo */
+  }
+}
+
+/* Ajustes globales para evitar el fondo blanco */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background-color: transparent; /* Asegúrate de que el fondo del body no sea blanco */
+}
